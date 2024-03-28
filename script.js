@@ -3,6 +3,7 @@ const form = document.querySelector('form')
 const button = document.querySelector('#currencyButton')
 const pairLabel = document.querySelector('#pair-label')
 const output = document.querySelector('#output')
+const outputLast = document.querySelector('#output-last')
 const outputBox = document.querySelector('#rate-box')
 
 async function init() {
@@ -25,7 +26,7 @@ init()
 async function getCurrencyRates(event) {
     event.preventDefault()
     button.setAttribute('disabled', true)
-    button.textContent = "Loading..."
+    button.value = "Loading..."
 
     const firstCurrency = currencySelectors[0].value
     const secondCurrency = currencySelectors[1].value
@@ -36,10 +37,11 @@ async function getCurrencyRates(event) {
 
     outputBox.style.display = "flex"
     pairLabel.textContent = `${firstCurrency}/${secondCurrency}`
-    output.textContent = rate
+    output.textContent = rate.toString().slice(0, 6)
+    outputLast.textContent = rate.toString().slice(6)
 
     button.removeAttribute('disabled')
-    button.textContent = "Get Exchange Rate"
+    button.value = "Get Exchange Rate"
 }
 
 async function getCurrencyCategories() {

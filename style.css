@@ -81,3 +81,12 @@ label {
     color: rgb(0, 0, 0);
     box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.397);
 }
+
+.span-box {
+    display: flex;
+    flex-direction: row;
+}
+
+#output-last {
+    color: rgba(0, 0, 255, 0.295)
+}
