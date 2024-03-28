@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Rates</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <img id="banner" src="banner.png" alt="banner">
+        <form>
+            <div class="currency-pair-box">
+                <div class="currency-selector-box">
+                    <label for="firstCurrency">First Currency</label>
+                    <select class="selector" name="firstCurrency" id="firstCurrency"></select>
+                </div>
+                <div class="currency-selector-box">
+                    <label for="secondCurrency">Second Currency</label>
+                    <select class="selector" name="secondCurrency" id="secondCurrency"></select>
+                </div>
+            </div>
+
+            <input type="submit" id="currencyButton" value="Get Exchange Rate" disabled>
+        </form>
+        <div id="rate-box">
+            <span id="pair-label"></span>
+            <span id="output"></span>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

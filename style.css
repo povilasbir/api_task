@@ -1,0 +1,83 @@
+body {
+    min-height: 1000px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 15%, rgba(0, 0, 255, 0.196516106442577) 100%);
+}
+
+main {
+    font-family: "Roboto Mono", monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#banner {
+    margin-left: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.currency-pair-box {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+    gap: 30px
+}
+
+.currency-selector-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px
+}
+
+label {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.selector {
+    width: 200px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: white;
+    text-align-last: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#currencyButton {
+    width: 430px;
+    height: 70px;
+    border-radius: 200px;
+    background-color: hsl(0, 100%, 71%);
+    border-color: rgba(255, 255, 255, 0);
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+    font-style: italic;
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.397);
+}
+
+#rate-box {
+    display: none;
+    border: solid rgba(0, 0, 255, 0.514) 2px;
+    padding-left: 40px;
+    padding-right: 40px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    width: 360px;
+    height: 70px;
+    border-radius: 200px;
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.397);
+}
